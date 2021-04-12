@@ -17,11 +17,12 @@ a{
     height: 100vh;
     box-sizing: border-box;
     background-color: #edf1fd;
+    position: relative;
 }
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     text-transform: uppercase;
     font-weight: 600;   
@@ -40,6 +41,7 @@ nav{
 
 .menu{
     display: flex;
+    margin: 0 20%;
 }
 
 .menu li a{
@@ -59,7 +61,8 @@ nav{
     font-family: Poppins;
 }
 .logo img{
-    height: 50px;
+    height: 55px;
+    width: 180px;
 }
 
 .menu li a:hover,
@@ -68,4 +71,41 @@ nav{
         color: #ffffff !important;
         font-weight: 700;
         transition: all ease 0.5s;
-    }
+}
+
+.name{
+    font-family: calibri, serif;
+    width: 500px;
+    position:absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+.name p:nth-child(1),
+.name .details {
+    color: #6c707c;
+    font-size: 16px;
+}
+
+.name h1{
+    font-family: Poppins;
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 4px;
+    color: #292929;
+}
+
+.cv-btn{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: #ffffff;
+}
+.cv-btn:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
