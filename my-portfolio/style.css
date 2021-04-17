@@ -52,18 +52,13 @@ nav{
     padding: 10px 15px;
     font-size: 12px;
     color: #6c707c;
+    font-family: Poppins;
 }
 
 .lang{
     color: #292929;
 }
 
-.logo{
-    font-size: 25px;
-    font-weight: bold;
-    color: #292929;
-    font-family: Poppins;
-}
 .logo img{
     height: 55px;
     width: 180px;
@@ -93,7 +88,7 @@ nav{
 }
 
 .name h1{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 48px;
     margin: 0;
     letter-spacing: 4px;
@@ -108,6 +103,7 @@ nav{
     align-items: center;
     background-color: #292929;
     color: #ffffff;
+    font-family: sans-serif;
 }
 .cv-btn:hover{
     background-color: #e53935;
@@ -135,12 +131,12 @@ nav{
 
 .arrow{
     align-self: end;
-    width: 50%;
+    width: 20%;
     height: 15%;
     margin-bottom:4em;
     position: absolute;
     bottom: 0px;
-    left: -3%;
+    left: 30%;
     border-right: 1px solid rgba(41, 41, 41, 0.3);
 }
 .arrow::after{
@@ -173,7 +169,7 @@ nav{
 
 .about-text h1{
     font-size: 5rem;
-    color: #17dcac;
+    color: #e53935;
 }
 .about-text h2{
     font-size: 3rem;
@@ -196,7 +192,8 @@ nav{
     border-radius: 20px;
     border: none;
     outline: none;
-    background-color: #17dcac;
+    background-color: #e53935;
+    color: #ffffff;
 }
 .about-text button:hover{
     background-color: #ffffff;
@@ -299,10 +296,215 @@ nav{
     box-shadow: 2px 2px 12px rgba(0,0,0, 0.2);
 }
 .s-box:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     transition: all ease 0.4s;
 }
 
 .s-b-text a:hover{
     color: rgba(255, 255, 255, 0.5);
+}
+
+/****************** services *******************/
+#portfolio{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 2% 20px 2%; 
+}
+
+.p-heading{
+    font-family: Calibri;
+    font-size:1,7rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.p-box{
+    background-color: #1f1f1f;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.p-b-contrainer{
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.text-overlay{
+    font-family: Calibri;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(243, 81, 83, 0.8);
+    display: none;
+}
+
+.text-overlay h1,p{
+    color: #ffffff;
+}
+
+.text-overlay h1{
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.p-box:hover .text-overlay{
+    display: flex;
+}
+
+.p-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/****************** contact *******************/
+#contact-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f4f7ff;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+#contact-btn h1{
+    font-size: 2rem;
+    color: #1e1e1e;
+    font-family: Calibri;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 4px;
+}
+
+#contact-btn a{
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: Calibri, Thoma, serif;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-btn a:hover{
+    background-color: #e53935;
+    color: #191919;
+    transition: all ease 0.5s;
+    font-weight: 700;
+}
+
+#contact-form{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form form{
+    display: flex;
+    width: 70%;
+    height: 60vh;
+    background-color: #1a1a1a;
+    box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.contact-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-right{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.c-l-heading{
+    font-family: Calibri;
+    color: #ffffff;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.f-email, .f-name{
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri;
+}
+
+.f-email font,
+.f-name font{
+    color: #bfbfbf;
+    font-size: 22px;
+}
+
+.f-email input,
+.f-name input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #929292;
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+.f-email input::placeholder,
+.f-name input::placeholder{
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.f-email input:focus,
+.f-name input:focus{
+    border-bottom: 1px solid#17d1ac;
 }
