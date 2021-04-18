@@ -4,6 +4,10 @@ body{
     background-color: #161616;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style: none;
 }
@@ -197,6 +201,7 @@ nav{
 }
 .about-text button:hover{
     background-color: #ffffff;
+    color: #1e1e1e;
     transition: all ease 0.5s;
 }
 
@@ -218,7 +223,7 @@ nav{
 }
 
 .s-heading h1{
-    color: #ffffff;
+    color: #e53935;
     font-size: 3rem;
     margin: 0;
     padding: 0;
@@ -318,9 +323,9 @@ nav{
 
 .p-heading{
     font-family: Calibri;
-    font-size:1,7rem;
+    font-size:2.3rem;
     text-align: center;
-    color: #ffffff;
+    color: #e53935;
     font-weight: 400;
     padding: 10px 20px;
     background-color: #292929;
@@ -408,6 +413,7 @@ nav{
     margin: 10px;
     padding: 5px;
     letter-spacing: 4px;
+    border-bottom: 2px solid #1e1e1e;
 }
 
 #contact-btn a{
@@ -505,6 +511,56 @@ nav{
 }
 
 .f-email input:focus,
-.f-name input:focus{
-    border-bottom: 1px solid#17d1ac;
+.f-name input:focus,
+.c-l-heading font{
+    border-bottom: 2px solid #e53935;
+}
+
+.message{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message font{
+    font-size: 18px;
+    color: #4e4e4e;
+    font-family: Calibri;
+}
+
+.contact-right textarea{
+    width: 100% !important;
+    height: 260px !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #ebebeb;
+    font-size: 16px;
+}
+
+.contact-right textarea::placeholder{
+    color: #ebebeb;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: Calibri;
+}
+
+.contact-right button{
+    width: 100%;
+    height: 50px;
+    background-color: #e53935;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0px;
+    color: #1b1b1b;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact-right button:hover{
+    letter-spacing: 3px;
+    background-color: #f82b2b;
+    transition: 0.25s;
 }
