@@ -1,0 +1,39 @@
+.textview{
+    width: 265px;
+    height: 55px;
+    margin: 2.5px;
+    padding: 2.5px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #153e6d;
+    border: none;
+}
+
+.button{
+    height: 55px;
+    width: 60px;
+    margin: 2.5px;
+    font-size: 28px;
+    font-weight: bolder;``````````````````````````````````````````
+    cursor: pointer;
+    color: #153e6d;
+    background: #37db6e;
+    border: none;
+}
+.button:hover{
+    color: #29517e;
+    background-color: #53ee87;
+    transition: 0.15s;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    background: #f36753 ;/*linear-gradient(to right,rgb(40, 70, 240), rgb(140, 78, 255),rgb(250, 68, 92)); */
+    height: 100%;
+}

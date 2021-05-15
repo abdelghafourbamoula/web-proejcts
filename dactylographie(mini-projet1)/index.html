@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dactylography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dactylography</h1>
+    </header>
+
+    <div class="conrtainer">
+        <div class="principal">
+            <div id="paragraph"></div>
+            <textarea name="textinput" id="text" placeholder="copy the paragraph here ..."></textarea>
+            <p style="font-size: 12px; color: #3b3b3be3; margin: 10px;">&#169; Abdelghafour Bamoula</p>
+        </div>
+
+        <div class="control">
+            <div class="infos">
+                <p>This is a Typing test. Your goal is to duplicate the text turned <b>EXACTLY</b> in the 
+                field above. the monitor starts up when you start typing and doesn't stop until you match 
+                that text exactly. <br> Good luck!</p>
+            </div>
+            
+            <div id="timer">00:00:00</div>
+
+            <button id="restart">Repeat the test</button>
+            <audio id="audio" loop src="timervoice.wav">Your browser doesn't support audio tools</audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
