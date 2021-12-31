@@ -1,0 +1,74 @@
+
+body{
+    background-color: #5d97f0;
+}
+
+svg{
+
+    fill: #67e7c1;
+    stroke: #67e7c1;
+    stroke-width: 1;
+    stroke-linecap: round;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg #face{
+    stroke: #ff2637;
+    fill: #5a5858;
+    stroke-width: 3;
+}
+svg #face1{
+    stroke: #67e7c1;
+}
+#ticks line{
+    stroke: #5a5858;
+;
+}
+#numbers text{
+    font-size: 9px;
+    stroke: #ff2637;
+}
+
+.seconds{
+    stroke: #ff2637;
+    stroke-width: 0.7;
+}
+.minute{
+    stroke-width: 2;
+    stroke: #979494;
+}
+.hour{
+    stroke: #5a5858;
+    stroke-width: 2.5;
+}
+.pin{
+    fill: #5a5858;
+    stroke-width: 0.5;
+    stroke: #ff2637;
+}
+
+.cptext{
+    font-size: 2.8px;
+    font-family: sans-serif;
+    fill: #5a5858e5;
+    stroke: none;
+    transform: translate(32px, 65px);
+}
+
+.marks {
+    transform: translate(50px, 50px) rotate(-90deg);
+    stroke-width: 1.3;
+    stroke: #5a5858e5;
+}
+/* if there are 12 marks, so we rotate by 30deg (12 * 30 = 360) */
+.marks > line:nth-child(1) { transform: rotate(30deg);   }
+.marks > line:nth-child(2) {transform: rotate(calc(2 * 30deg)); }
+.marks > line:nth-child(3) {transform: rotate(calc(4 * 30deg));  }
+.marks > line:nth-child(4) {transform: rotate(calc(5 * 30deg)); }
+.marks > line:nth-child(5) {transform: rotate(calc(7 * 30deg)); }
+.marks > line:nth-child(6) { transform: rotate(calc(8 * 30deg)); }
+.marks > line:nth-child(7) { transform: rotate(calc(10 * 30deg)); }
+.marks > line:nth-child(8) {  transform: rotate(calc(11 * 30deg));  }

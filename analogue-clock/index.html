@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analogue Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="clock.png">
+</head>
+<body>
+    <svg id="clock" viewBox="0 0 100 100" width="500" height="500">
+        <defs>
+            <filter id="f3">
+                <feOffset result="offOut" in="SourceAlpha" />
+                <feGaussianBlur result="blurOut" in="OffOut" stdDeviation="0.5"/>
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+            </filter>
+        </defs> 
+        <circle id="face" cx="50" cy="50" r="45" filter="url(#f3)" />
+        <circle id="face1" cx="50" cy="50" r="42" filter="url(#f3)" />
+
+       <g class="marks">
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+            <line x1="40" y1="0" x2="39" y2="0" />
+       </g>
+
+        <g id="numbers">
+            <text x="44" y="17">12</text>
+            <text x="83" y="53">3</text>
+            <text x="47" y="90">6</text>
+            <text x="10" y="53">9</text>
+        </g> 
+        
+        <text x="0" y="0" class="cptext">&#169; Abdelghafour Bamoula</text>
+        
+        <line x1="50" y1="50" x2="50" y2="35" class="hour" id="hour" />
+        <line x1="50" y1="50" x2="50" y2="25" class="minute" id="minute"/>
+        <line x1="50" y1="58" x2="50" y2="10" class="seconds" id="seconds"/>
+        <circle cx="50" cy="50" r="1" class="pin" />
+          
+    </svg>
+
+    <audio autoplay loop src="clock-ticking.mp3">your browser doesn't support autoplay <code>audio</code></audio>
+    <script src="script.js"></script>
+</body>
+</html>
